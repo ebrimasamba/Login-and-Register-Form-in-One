@@ -1,0 +1,156 @@
+/* *{
+    outline: solid 1px red;
+} */
+header {
+  background-color: #ffffff;
+  color: #202020;
+}
+
+body {
+  font-family: "Titillium Web", sans-serif;
+  /* background-color: black; */
+}
+
+header {
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+}
+header .navbar-brand {
+  font-size: 27px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+header .navbar-brand span {
+  color: #04b672;
+}
+header nav .navbar-toggler-icon {
+  background-image: none !important;
+}
+
+header nav div.navbar-toggler {
+  position: relative;
+  cursor: pointer;
+}
+
+.fa-bars {
+  pointer-events: none;
+  color: #04b672;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header .nav-link {
+  color: inherit !important;
+  font-weight: 500;
+  font-size: 16.8px;
+  letter-spacing: 1px;
+  transition: color 0.2s;
+}
+
+header .nav-link:hover {
+  color: #04b672 !important;
+}
+.h-landing {
+  /* height: 650px; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/2268078.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  padding-bottom: 225px;
+}
+
+.h-landing-bg {
+  /* background-color: #04b672; */
+  color: white;
+}
+.h-landing h1 {
+  font-weight: 700;
+  font-size: 60px;
+  letter-spacing: 1px;
+}
+.h-landing span {
+  color: #04b672;
+}
+
+.h-landing p {
+  color: #eeeeee;
+  font-weight: 300;
+}
+.h-landing form {
+  position: relative;
+  width: 60%;
+}
+.h-landing input {
+  border-radius: 50px;
+  font-size: 18px;
+}
+
+.h-landing input:focus::placeholder {
+  color: #04b672;
+}
+
+.h-landing button {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  height: 100%;
+  border-radius: 0 50px 50px 50px;
+  border: solid 1px #04b672;
+  background-color: #04b672;
+  font-size: 25px;
+  transition: transform 0.2s;
+}
+.h-landing button:hover .fa {
+  transform: scale(1.1);
+}
+
+.arrow {
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 280px;
+}
+
+.h-landing .arrow a {
+  background-color: #04b672;
+  color: white;
+  padding: 16px 20px;
+  border-radius: 50%; 
+  /* overflow-y: hidden; */
+}
+.h-landing .arrow a .fa {
+
+}
+
+.h-landing::before {
+  content: "";
+  position: absolute;
+  height: 100px;
+  width: 50%;
+  background-color: #fff;
+  top: 90%;
+  left: 0;
+  transform: skewY(-4deg);
+}
+.h-landing::after {
+  content: "";
+  position: absolute;
+  height: 100px;
+  width: 50%;
+  background-color: #fff;
+  top: 90%;
+  right: 0;
+  transform: skewY(4deg);
+}
+
+.py-custom {
+  padding: 32px 0 32px 15px !important;
+}
